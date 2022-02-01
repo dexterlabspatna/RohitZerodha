@@ -43,7 +43,7 @@ def webhook1():
         qnt = 1
     else:
         qnt = 2
-    result = order_place('',data['tradingsymbol'], data['exchange'], data["transaction_type"].upper(), qnt*50, data['price'])
+    result = order_place('',data['tradingsymbol'], data['exchange'], data["transaction_type"].upper(), qnt*50,0)
     print(result)
     return{
         "code": "error",
